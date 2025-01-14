@@ -31,3 +31,5 @@ int main() {
 
     return 0;
 }
+// Time Complexity:𝑂(𝑛)
+// Space Complexity:O(n) (for recursion stack and memo array))
