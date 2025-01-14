@@ -7,11 +7,12 @@ int fibo(int n)
     if (n <= 1){
         return n; // Base cases
     }
-
-    // Create a DP table to store Fibonacci numbers:
-    int dpTable[n + 1];
-    dpTable[0] = 0;
+    
+    int dpTable[n + 1]; // Create a DP table to store Fibonacci numbers:
+    
+    dpTable[0] = 0; //set 2 index value
     dpTable[1] = 1;
+    
     for (int i = 2; i <= n; i++)
     {
         dpTable[i] = dpTable[i - 1] + dpTable[i - 2];
@@ -30,5 +31,6 @@ int main()
 
     return 0;
 }
+
 // Time Complexity:𝑂(𝑛)
-// Space Complexity:O(n) (for recursion stack and memo array))
+// Space Complexity:O(n) (for the Dp array))
